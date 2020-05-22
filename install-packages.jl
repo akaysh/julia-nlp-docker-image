@@ -58,10 +58,3 @@ metadata_packages = [
 for package=metadata_packages
     Pkg.add(package)
 end
-
-# need to build XGBoost version for it to work
-Pkg.clone("https://github.com/antinucleon/XGBoost.jl.git")
-Pkg.build("XGBoost")
-
-
-Pkg.resolve()
